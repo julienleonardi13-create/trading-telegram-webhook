@@ -2,9 +2,6 @@ from flask import Flask, request, jsonify
 import telebot
 import os
 from datetime import datetime
-import requests
-import pandas as pd
-import numpy as np
 
 app = Flask(__name__)
 
@@ -202,3 +199,4 @@ def health():
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
+
